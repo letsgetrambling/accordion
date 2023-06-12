@@ -1,2 +1,7 @@
-document.body.innerHTML = '<h1>Hello from JavaScript</h1>';
-console.log('Test 2');
+const accordion = document.getElementsByClassName('container');
+
+for (i=0; i<accordion.length; i++) {
+    accordion[i].addEventListener('click', function () {
+        this.classList.toggle('active')
+    })
+}
